@@ -1,12 +1,18 @@
 #include <stdio.h>
 
+
+
 /**
 
- * main - Prints using puts() command
+ * main - Entry point
 
- * Return: 0 prints something
+ * Description: prints "\"Programming is like building a multilingual puzzle"
+
+ * Return: 0
 
  */
+
+
 
 int main(void)
   
@@ -14,5 +20,6 @@ int main(void)
   
   puts("\"Programming is like building a multilingual puzzle");
   
-  return (0);  
+  return (0);
+  
 }
