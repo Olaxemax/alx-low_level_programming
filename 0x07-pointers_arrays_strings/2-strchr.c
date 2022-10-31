@@ -1,22 +1,21 @@
+#include <stdio.h>
 #include "main.h"
-#include <stddef.h>
 
 /**
- * _strchr - copies memory area.
- * @s: string to search
- * @c: char to search for
- *
- * Return: s or NULL
+ * _strchr - Entry point
+ * @s: input
+ * @c: input
+ * Return: Always 0 (Success)
  */
 char *_strchr(char *s, char c)
 {
-	while (*s)
+	int i;
+
+	for (i = 0; s[i] >= '\0'; i++)
 	{
-		if (*s == c)
-		{
-			return (s);
-		}
-		s++;
+		if (s[i] == c)
+			return (s + i);
 	}
+
 	return (NULL);
 }
