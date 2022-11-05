@@ -1,25 +1,23 @@
-#include <stdio.h>
-#include <stdlib.h>
+nclude <stdio.h>
 
 /**
 
  * main - Entry point
 
- * @argc: argument count
+ * @argc: arguments count
 
- * @argv: argument vector
+ * @argv: list of args
 
- * Return: 0
+ *
+
+ * Return: Always 0 (Success)
 
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
+
 {
 
-    (void)argc;
-
-    printf("%s\n", argv[0]);
-
-    exit(EXIT_SUCCESS);
+	printf("%s\n", argv[0]);	return (0);
 
 }
