@@ -36,3 +36,25 @@ int main(int argc, char *argv[])
 
 	exit(EXIT_SUCCESS);
 }
+
+/**
+ * is_number - checks if a character is a number
+ * @str: param to check
+ * Return: 0 if true else 1
+ */
+
+int is_number(char *str)
+{
+	int i = 0;
+
+	if (str[0] == '-')
+		i = 1;
+
+	for (; str[i]; i++)
+	{
+		if (*(str + i) < '0' || *(str + i) > '9')
+			return (1);
+	}
+
+	return (0);
+}
